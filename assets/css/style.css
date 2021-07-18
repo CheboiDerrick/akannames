@@ -13,16 +13,20 @@ body {
 .container-ind {
   width: 100%;
   height: 100%;
-  background: url("../images/wallpapertip_3d-printing-wallpaper_2083274.jpg")
-    no-repeat center;
+  background: url("../images/wallpapertip_3d-printing-wallpaper_2083274.jpg");
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
   background-size: cover;
+  background-position: top right;
 }
 
 .content {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
-  margin: 0 5% 0% 50%;
+  margin: 2% 1% 0% 42%;
   padding: 5% 2% 2% 2%;
+  width: 45%;
 }
 
 .content h1 {
@@ -45,11 +49,13 @@ body {
 }
 
 .container-ind button {
-  width: 30%;
-  margin: 20% 25% 10% 55%;
+  width: 25%;
+  margin: 20% 10% 10% 60%;
   background-color: #fcd116;
   border-radius: 20px;
   border: none;
+  transition: ease-in-out;
+  transition-duration: 500ms;
 }
 
 .container-ind button a {
@@ -78,7 +84,10 @@ a {
 
 .container-dip {
   display: flex;
-  background-color: #e5e5e5;
+  background-color: #bf532c;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .container-dip img {
@@ -89,7 +98,7 @@ a {
 .content-dip {
   display: flex;
   flex-direction: column;
-  margin: 6% 5% 0 5%;
+  margin: 2% 5% 0 5%;
 }
 
 .content-dip p {
@@ -113,7 +122,10 @@ select {
   font-size: 1.5em;
   line-height: 45px;
   text-align: center;
-  margin-bottom: 0.5em;
+}
+
+.content-dip label {
+  margin-bottom: 0.2em;
 }
 
 .content-dip input,
@@ -151,4 +163,12 @@ select {
   font-size: 1.5em;
   line-height: 45px;
   text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #bf532c;
+  align-items: center;
+  justify-content: center;
 }
