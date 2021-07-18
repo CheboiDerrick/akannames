@@ -1,5 +1,5 @@
 # Akan Names
-#### This is double page website that reveals your Akan Name based on the week day you were born and your gender.
+#### This is a double page website that reveals your Akan Name based on the week day you were born and your gender.
 #### By **Cheboi Derrick**
 ## Description
 In Ghana children are named based on the day of the week they were born and whether they are male or female. This website assists one to discover their Akan Name based on their gender and day of the week they were born. The site calculates the day of the week one was born from their date of birth. This together with the gender of the individual the site displays your correct Akan Name.  
