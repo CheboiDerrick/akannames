@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-dip">
         <img src="./assets/images/mom1.png" alt="">
-        <div class="content">
-            <p>Discover your African Identity.</p>
+        <div class="content-dip">
+            <p><span><strong><em>Discover</em></strong></span> your African Identity.</p>
         <form action="">
-            <label for="date">Enter your birth date</label>
-            <input type="date" id="date">
-            <label for="gender" >Gender</label>
-                <select name="gender" id="gender">
+            <label for="date">Enter your birth date :</label><br>
+            <input type="date" id="date" placeholder="MM/DD/YYYY" onfocus="(this.type='date')"
+            onblur="(this.type='text')"> <br>
+            <label for="gender" >Select Gender :</label> <br>
+            <select name="gender" id="gender">
                     <option value="default">Please select</option>
                     <option value="Female">Female</option>
                     <option value="Male">Male</option>
+            </select> <br>
+            <button>Reveal your Akan</button>
         </form>
         </div>
         
