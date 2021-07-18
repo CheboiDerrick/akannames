@@ -20,3 +20,25 @@ let getInputs=() =>{
     userDate= new Date(dateInput);
     console.log(userDate);
 }
+
+//Function to get the day of the week d
+let getDay=() =>{
+    getInputs();
+    console.log(userDate);
+    CC = userDate.getFullYear();
+    console.log(CC);
+    CC = CC.toString().substr(0, 2);
+    console.log(CC);
+    YY = userDate.getFullYear();
+    YY = YY.toString().substr(2, 4);
+    console.log(YY);
+    MM = userDate.getMonth();
+    console.log(MM);
+    DD = userDate.getDate();
+    console.log(DD);
+    d = userDate.getDay();
+    console.log(d);
+    day = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7;
+    day=Math.round(day);
+    return d;
+}
