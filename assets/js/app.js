@@ -23,7 +23,7 @@ let getInputs = () => {
 
 //Function to get the day of the week d
 let getDay = () => {
-    getInputs();
+    // getInputs();
     console.log(userDate);
     CC = userDate.getFullYear();
     console.log(CC);
@@ -48,13 +48,14 @@ let assignAkan = () => {
     getDay();
     if (gender == "Female") {
         akanName = akanFemale[d];
-        messageDisplay = 'Your Akan Name is ' + '<strong>' + '<em>' + akanName + '</em>' + '</strong>' + ', meaning female born on  ' + userDate.toLocaleString('en-us', { weekday: 'long' })
+        messageDisplay = 'Your Akan Name is ' + '<strong>' + '<em>' + akanName + '</em>' + '</strong>' + ', meaning a female born on  ' + userDate.toLocaleString('en-us', { weekday: 'long' })
         console.log(messageDisplay);
         document.getElementById("display").innerHTML = messageDisplay;
     }
     else {
         akanName = akanMale[d];
-        messageDisplay = 'Your Akan Name is ' + akanName + ', meaning a male born on  ' + userDate.toLocaleString('en-us', { weekday: 'long' });
+        messageDisplay = 'Your Akan Name is ' + '<strong>' + '<em>' + akanName + '</em>' + '</strong>' + ', meaning a male born on  ' + userDate.toLocaleString('en-us', { weekday: 'long' })
+        console.log(messageDisplay);
         console.log(messageDisplay);
         document.getElementById("display").innerHTML = messageDisplay;
     }
@@ -80,16 +81,4 @@ document.getElementById("buttonReveal").addEventListener("click", function (even
     validateInput();
 });
 
-// l
-//     getInputs();
-//     if (userDate>new Date()||isNaN(userDate)){
-//         alert(`Enter a correct date`);
-//     }
-//     else if (gender=='default') {
-//         alert('Please select your gender');
-//     }
-//     else {
-//         assignAkan();
-//     }
-// }
 
