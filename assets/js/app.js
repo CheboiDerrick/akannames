@@ -48,15 +48,15 @@ let assignAkan=() =>{
     getDay();
     if (gender=="Female") {
         akanName=akanFemale[d];
-        messageDisplay='Your Akan Name is '+ akanName+ ', meaning female born on  '+ userDate.toLocaleString('en-us', { weekday: 'long' })
+        messageDisplay='Your Akan Name is '+ <strong>+<em>+akanName+ </em>+</strong>+ ', meaning female born on  '+ userDate.toLocaleString('en-us', { weekday: 'long' })
         console.log(messageDisplay);
-        document.getElementById("demo").innerHTML = messageDisplay;
+        document.getElementById("display").innerHTML = messageDisplay;
     }
     else {
         akanName=akanMale[d];
         messageDisplay='Your Akan Name is '+ akanName+ ', meaning a male born on  '+ userDate.toLocaleString('en-us', { weekday: 'long' });
         console.log(messageDisplay);
-        document.getElementById("demo").innerHTML = messageDisplay;
+        document.getElementById("display").innerHTML = messageDisplay;
     }
 }
 
