@@ -60,3 +60,17 @@ let assignAkan=() =>{
     }
 }
 
+//function to validate the user input and initialize whole program
+let validateInput= () => {
+    getInputs();
+    if (userDate>new Date()||isNaN(userDate)){
+        alert(`Enter a correct date`);
+    }
+    else if (gender=='default') {
+        alert('Please select your gender');
+    }
+    else {
+        assignAkan();
+    }
+}
+
