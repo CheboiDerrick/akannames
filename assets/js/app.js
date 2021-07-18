@@ -42,3 +42,21 @@ let getDay=() =>{
     day=Math.round(day);
     return d;
 }
+
+//function to assign the aka name based on the value d returned
+let assignAkan=() =>{
+    getDay();
+    if (gender=="Female") {
+        akanName=akanFemale[d];
+        messageDisplay='Your Akan Name is '+ akanName+ ', meaning female born on  '+ userDate.toLocaleString('en-us', { weekday: 'long' })
+        console.log(messageDisplay);
+        document.getElementById("demo").innerHTML = messageDisplay;
+    }
+    else {
+        akanName=akanMale[d];
+        messageDisplay='Your Akan Name is '+ akanName+ ', meaning a male born on  '+ userDate.toLocaleString('en-us', { weekday: 'long' });
+        console.log(messageDisplay);
+        document.getElementById("demo").innerHTML = messageDisplay;
+    }
+}
+
