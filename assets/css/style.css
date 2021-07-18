@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background:url('../images/wallpapertip_3d-printing-wallpaper_2083274.jpg') no-repeat;
+    background-size:cover;
+}
+
+.content{
+   background-color: rgba(#c4c4c4, 0.8);
+   margin: 5% 10% 0% 50%;
+}
+
+.content h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 108px;
+    text-align: center;
+
+}
+
+.content h1 span{
+    color:#FCD116;
+}
+
+.content p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+}
