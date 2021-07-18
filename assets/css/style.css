@@ -142,5 +142,12 @@ a{
     transition-duration: 500ms;
 }
 
+.content-dip #display{
+    margin-top: 0.8em;
+    font-size: 1.2em;
+    line-height: 45px;
+    text-align: left;
+}
+
 
 
